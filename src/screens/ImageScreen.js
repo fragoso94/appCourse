@@ -25,8 +25,11 @@ const ImageScreen = () => {
     return(
         <View>
             {
-              Cursos.map( (c, index) => <ImageDetail key={index} titulo={c.titulo} img={c.img} /> )
+              //Cursos.map( (c, index) => <ImageDetail key={index} titulo={c.titulo} imageSource={c.img} /> )
             }
+            <ImageDetail title= "Forest" imageSource={require('../../assets/image/image2.png')} />
+            <ImageDetail title= "Beach" imageSource={require('../../assets/image/image2.png')} />
+            <ImageDetail title= "Mountain" imageSource={require('../../assets/image/image2.png')} />
         </View>
     );
 }
