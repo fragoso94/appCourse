@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42c231db-42c1-4d11-9f38-a09081d3c943" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/ImageDetail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/image1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/image2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/image3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/image4.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/HomeScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/ListScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/ListScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ImageDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ImageDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/ImageScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/ImageScreen.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +32,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1QKnDT8nqstak4STi1FCRBKFqYU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -64,7 +69,7 @@
       <workItem from="1567537141643" duration="115000" />
       <workItem from="1567537265850" duration="105000" />
       <workItem from="1567537379121" duration="2068000" />
-      <workItem from="1567543692424" duration="3873000" />
+      <workItem from="1567543692424" duration="6248000" />
     </task>
     <servers />
   </component>
@@ -83,5 +88,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

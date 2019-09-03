@@ -5,19 +5,19 @@ import ImageDetail from "../Components/ImageDetail";
 const Cursos = [
     {
         'titulo' : 'React desde cero',
-        'img' : 'https://drupal.ed.team/sites/default/files/imagenes-cdn-edteam/2019-04/React%20desde%20cero%20%281%29.png',
+        'img' : 'image1.png'
     },
     {
         'titulo' : 'Firebase con android',
-        'img' : "https://drupal.ed.team/sites/default/files/styles/16_9_medium/public/imagenes-cdn-edteam/2019-07/firebase-android.png",
+        'img' : 'image2.png'
     },
     {
         'titulo' : 'CEO Avanzado',
-        'img' : 'https://drupal.ed.team/sites/default/files/imagenes-cdn-edteam/2019-06/SEO%20Avanzado.png',
+        'img' : 'image3.png'
     },
     {
         'titulo' : "Conmutación de redes",
-        'img' : 'https://drupal.ed.team/sites/default/files/imagenes-cdn-edteam/2019-03/Redes%20Conmutacion.png',
+        'img' : 'image4.png'
     },
 ];
 
@@ -25,7 +25,7 @@ const ImageScreen = () => {
     return(
         <View>
             {
-              Cursos.map( (c, index) => <ImageDetail key={index} titulo={c.titulo} /> )
+              Cursos.map( (c, index) => <ImageDetail key={index} titulo={c.titulo} img={c.img} /> )
             }
         </View>
     );
