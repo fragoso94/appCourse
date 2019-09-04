@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import {View, Text, StyleSheet } from 'react-native';
+import {View, Text, StyleSheet, ScrollView } from 'react-native';
 import ImageDetail from "../Components/ImageDetail";
 
 const Cursos = [
@@ -24,12 +24,15 @@ const Cursos = [
 const ImageScreen = () => {
     return(
         <View>
-            {
-              //Cursos.map( (c, index) => <ImageDetail key={index} titulo={c.titulo} imageSource={c.img} /> )
-            }
-            <ImageDetail title= "Forest" imageSource={require('../../assets/image/image2.png')} />
-            <ImageDetail title= "Beach" imageSource={require('../../assets/image/image2.png')} />
-            <ImageDetail title= "Mountain" imageSource={require('../../assets/image/image2.png')} />
+            <ScrollView contentContainerStyle={styles.contentContainer}>
+
+                {
+                  //Cursos.map( (c, index) => <ImageDetail key={index} titulo={c.titulo} imageSource={c.img} /> )
+                }
+                <ImageDetail title= "Forest" imageSource={require('../../assets/image/image2.png')} />
+                <ImageDetail title= "Beach" imageSource={require('../../assets/image/image2.png')} />
+                <ImageDetail title= "Mountain" imageSource={require('../../assets/image/image2.png')} />
+            </ScrollView>
         </View>
     );
 }
@@ -42,6 +45,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#2c3e50',
     },
+    contentContainer: {
+        paddingVertical: 20
+    }
 });
 
 //make this component available to the app
