@@ -18,6 +18,14 @@ const HomeScreen = ({navigation}) =>
                 title="Go to Image Detail"
                 onPress={ ()=> navigation.navigate('CardImage') }
             />
+            <Button
+                title="Counter screen"
+                onPress={ ()=> navigation.navigate('Counter')}
+            />
+            <Button
+                title="Colors screen"
+                onPress={ ()=> navigation.navigate('Colors')}
+            />
             {/*<TouchableOpacity onPress={ ()=> navigation.navigate('CardImage')}>
                 <Text>Ir a la lista</Text>
             </TouchableOpacity>*/}
@@ -38,10 +46,6 @@ const style = StyleSheet.create({
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center'
-    },
-    btnStyle:{
-        paddingTop: 10,
-        backgroundColor: '#008000'
     }
 });
 

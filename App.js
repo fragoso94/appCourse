@@ -6,13 +6,17 @@ import HomeScreen from "./src/screens/HomeScreen";
 import ComponentScreen from "./src/screens/ComponentScreen";
 import ListScreen from "./src/screens/ListScreen";
 import ImageScreen from "./src/screens/ImageScreen";
+import CounterScreen from "./src/screens/CounterScreen";
+import ColorScreen from "./src/screens/ColorScreen";
 
 const navigator = createStackNavigator(
     {
       Home: HomeScreen,
         Components: ComponentScreen,
         List: ListScreen,
-        CardImage: ImageScreen
+        CardImage: ImageScreen,
+        Counter: CounterScreen,
+        Colors: ColorScreen
     },
     {
       initialRouteName: 'Home',
@@ -30,7 +34,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-  },
+  }
 });
 
 export default createAppContainer(navigator);
