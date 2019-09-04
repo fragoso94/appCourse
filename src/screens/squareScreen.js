@@ -6,6 +6,8 @@ import ColorCounter from "../Components/ColorCounter";
 //función reductora
 const reducer = (state, action) =>
 {
+    //state: {red: number, green: number, blue: number}
+    //action {type: 'change_red' || 'change_green' || 'change_blue' , payload: 15 || payload: -15}
     switch (action.type) {
         case 'change_red':
              return (state.red + action.payload > 255 || state.red + action.payload < 0)
