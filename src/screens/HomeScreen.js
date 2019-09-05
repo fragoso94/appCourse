@@ -1,8 +1,19 @@
 import React from 'react';
 import {Text, View, Button, StyleSheet, TouchableOpacity} from 'react-native'
+import ButtonComponent from "../Components/ButtonComponent";
+const btnRoute = [
+    {
+    "title": "prueba 1",
+    "ruta": "'Box'",
+    },
+    {
+        "title": "prueba 3",
+        "ruta": "'Box'",
+    }
+];
 
 const HomeScreen = ({navigation}) =>
-{   
+{
     return (
         <View>
             <Button
@@ -34,9 +45,22 @@ const HomeScreen = ({navigation}) =>
                 title="Text screen"
                 onPress={ ()=> navigation.navigate('Text')}
             />
+            <Button
+                title="Box screen"
+                onPress={ ()=> navigation.navigate('Box')}
+            />
+            <Button
+                title="Exercise screen"
+                onPress={ ()=> navigation.navigate('Exercise')}
+            />
             {/*<TouchableOpacity onPress={ ()=> navigation.navigate('CardImage')}>
                 <Text>Ir a la lista</Text>
             </TouchableOpacity>*/}
+            {/* método para manda varios botones con método como props
+                btnRoute.map(
+                    (btn, index)=> <ButtonComponent key={index} title={btn.title} route={()=> { (typeof(btn.ruta) === 'string') ? navigation.navigate(btn.ruta): console.log("no existe ruta")}} />
+                )
+            */}
         </View>
 
     );
